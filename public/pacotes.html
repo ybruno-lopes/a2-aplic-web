@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Minas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <img
+            src="assets/logo.png"
+            alt="Meet Minas"
+            class="navbar-header__logo"
+          />
+          <button type="button" class="navbar-header__toogle">
+            <i class="fas fa-bars"></i> 
+          </button>
+        </div>
+        <!-- navbar-header -->
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-list__link">Home</a>
+          </li>
+          <li>
+            <a href="sobre.html" class="navbar-list__link">Sobre</a>
+          </li>
+          <li>
+            <a href="diferenciais.html" class="navbar-list__link">Diferenciais</a>
+          </li>
+          <li>
+            <a href="pacotes.html" class="navbar-list__link">Pacotes</a>
+          </li>
+          <li>
+            <a href="galeria.html" class="navbar-list__link">Galeria</a>
+          </li>
+        </ul>
+        <!-- navbar-list  -->
+        <ul class="navbar-icons">
+          <li>
+            <a
+              href="http://www.twitter.com"
+              target="_blank"
+              class="navbar-icons__icon"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.facebook.com"
+              target="_blank"
+              class="navbar-icons__icon"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.instagram.com"
+              target="_blank"
+              class="navbar-icons__icon"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="pacotes">
+      <div class="sec-dif">
+      <h2 class="section__titulo">
+        Nossos <span class="section__titulo--destaque">pacotes</span>
+      </h2>
+    </div>
+      <div class="pacotes">
+        <article class="pacote" onclick="openForm('Tiradentes')">
+          <img
+            src="assets/photo_2.png"
+            class="pacote__thumb"
+            alt="Tiradentes"
+          />
+          <div class="pacote__info">
+            <div class="info-header">
+              <h3 class="info-header__titulo">Tiradentes</h3>
+              <p class="info-header__dias">7 dias</p>
+            </div>
+            <p class="info-body">
+              Convidamos você a mergulhar em uma encantadora cidade histórica que carrega consigo a riqueza cultural e a atmosfera charmosa do período colonial brasileiro.
+            </p>
+            <div class="info-footer">
+              <span>
+                <i class="fas fa-users"></i>
+                1 Pessoa
+              </span>
+              <p>A partir de R$250</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pacote" onclick="openForm('Ouro Preto')">
+          <img
+            src="assets/photo_7.png"
+            class="pacote__thumb"
+            alt="Ouro Preto"
+          />
+          <div class="pacote__info">
+            <div class="info-header">
+              <h3 class="info-header__titulo">Ouro Preto</h3>
+              <p class="info-header__dias">14 dias</p>
+            </div>
+            <p class="info-body">
+              Ouro Preto é reconhecida mundialmente por sua arquitetura barroca deslumbrante, rica história colonial e cenários de tirar o fôlego.
+            </p>
+            <div class="info-footer">
+              <span>
+                <i class="fas fa-users"></i>
+                2 Pessoas
+              </span>
+              <p>A partir de R$500</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pacote" onclick="openForm('São Lourenço')">
+          <img
+            src="assets/photo_3.png"
+            class="pacote__thumb"
+            alt="São Lourenço"
+          />
+          <div class="pacote__info">
+            <div class="info-header">
+              <h3 class="info-header__titulo">São Lourenço</h3>
+              <p class="info-header__dias">21 dias</p>
+            </div>
+            <p class="info-body">
+              Conhecida por suas águas terapêuticas e clima ameno, São Lourenço é um verdadeiro refúgio de bem-estar e tranquilidade.
+            </p>
+            <div class="info-footer">
+              <span>
+                <i class="fas fa-users"></i>
+                2 Pessoas
+              </span>
+              <p>A partir de R$750</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pacote" onclick="openForm('Ipoema')">
+          <img src="assets/photo_6.png" class="pacote__thumb" alt="" />
+          <div class="pacote__info">
+            <div class="info-header">
+              <h3 class="info-header__titulo">Ipoema</h3>
+              <p class="info-header__dias">21 dias</p>
+            </div>
+            <p class="info-body">
+              Ipoema é uma pequena e charmosa cidade cercada por belas paisagens, cachoeiras deslumbrantes e trilhas exuberantes, que oferecem aos visitantes uma experiência única em meio à natureza.
+            </p>
+            <div class="info-footer">
+              <span>
+                <i class="fas fa-users"></i>
+                3 Pessoas
+              </span>
+              <p>A partir de $1000</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cadastro">
+      <div id="popup-form" class="popup-form">
+        <div class="form-container">
+          <span class="close-btn" onclick="closeForm()">&times;</span>
+          <!-- Your form goes here -->
+          <form onsubmit="event.preventDefault(); newCadastro(event)">
+            <h2>Cadastro</h2>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+  <!-- Your existing HTML code -->
+
+<script>
+
+  let destino
+
+  function openForm(data) {
+    destino = data
+    console.log(destino)
+    document.getElementById('popup-form').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  function closeForm() {
+    document.getElementById('popup-form').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  async function newCadastro(event) {
+    console.log(destino)
+    const nome = document.getElementById("name").value;
+    const email = document.getElementById("email").value
+
+    try {
+      await fetch("api/cadastro", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ nome, email, destino })
+      })
+      alert("Cadastro efetuado")
+    } catch (e) {
+      console.error('Erro')
+      console.error(e)
+    }
+  }
+</script>
+
+<!-- Closing tags for your existing HTML code -->
+  </body>
+
+
+
+</html>
+
